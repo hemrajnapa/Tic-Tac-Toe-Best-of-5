@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Best of 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game-screen">
+            <h1>Tic Tac Toe</h1>
+            <div id="score-box">
+                <div id="points">Player X: 0 | Player O: 0</div>
+                <div id="leader">Leader: None</div>
+            </div>
+            <div id="game-board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <div id="status">Player X's turn</div>
+            <div id="game-info">Game 1 of 5</div>
+        </div>
+        <div id="winner-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="winner-message"></h2>
+                <button id="next-game-btn">Next Game</button>
+            </div>
+        </div>
+        <div id="tiebreaker-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="tiebreaker-message"></h2>
+                <button id="restart-game-btn">New Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
